@@ -3,7 +3,7 @@ package watki.ch04;
 /** join() = poczekaj na wątek. interrupt() = poproś wątek, żeby skończył. */
 public class JoinAndInterrupt {
 
-    public static void main(String[] args) throws InterruptedException {
+    static void main() throws InterruptedException {
         Thread importer = new Thread(() -> {
             int rows = 0;
             // reagujemy na prośbę o przerwanie — to jest UMOWA, nie zabicie wątku

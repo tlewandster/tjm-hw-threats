@@ -11,7 +11,7 @@ public class LostUpdates {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    static void main() throws InterruptedException {
         for (int attempt = 1; attempt <= 5; attempt++) {
             counter = 0;
             Thread t1 = new Thread(LostUpdates::countMany);

@@ -13,7 +13,7 @@ public class SyncVsAsync {
         System.out.println("  label printed");
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    static void main() throws InterruptedException {
         System.out.println("=== sequential ===");
         long t0 = System.currentTimeMillis();
         brewCoffee();

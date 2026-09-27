@@ -3,7 +3,7 @@ package watki.ch04;
 /** Wątek daemon nie przedłuża życia JVM — user thread tak. */
 public class DaemonThread {
 
-    public static void main(String[] args) throws InterruptedException {
+    static void main() throws InterruptedException {
         Thread heartbeat = new Thread(() -> {
             int tick = 0;
             while (true) {

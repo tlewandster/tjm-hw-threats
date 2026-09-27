@@ -3,7 +3,7 @@ package watki.ch04;
 /** Cykl życia wątku podejrzany metodą getState(). */
 public class ThreadStates {
 
-    public static void main(String[] args) throws InterruptedException {
+    static void main() throws InterruptedException {
         Object lock = new Object();
 
         Thread worker = new Thread(() -> {

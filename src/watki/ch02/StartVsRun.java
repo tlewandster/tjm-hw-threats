@@ -3,7 +3,7 @@ package watki.ch02;
 /** Najczęstszy błąd początkującego: run() zamiast start(). */
 public class StartVsRun {
 
-    public static void main(String[] args) throws InterruptedException {
+    static void main() throws InterruptedException {
         Runnable task = () -> System.out.println("  executed by "
                 + Thread.currentThread().getName());
 

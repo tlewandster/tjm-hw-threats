@@ -11,7 +11,7 @@ public class FirstThreads {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    static void main() throws InterruptedException {
         System.out.println("main runs on " + Thread.currentThread().getName());
 
         Thread t1 = new LabelPrinter();
