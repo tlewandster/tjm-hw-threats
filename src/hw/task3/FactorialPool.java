@@ -34,14 +34,13 @@ public class FactorialPool {
 
     public static void main(String[] args) throws Exception {
         ExecutorService pool = Executors.newFixedThreadPool(POOL_SIZE);
-        List<Future<BigInteger>> futures = new ArrayList<>();
 
         List<Callable<BigInteger>> tasks = new ArrayList<>();
         for (int i = 0; i < MAX_N; i++) {
             int nextN = i + 1;
             tasks.add(() -> factorial(nextN));
         }
-        futures = pool.invokeAll(tasks);
+        List<Future<BigInteger>> futures = pool.invokeAll(tasks);
 
         int nextN = 0;
         for (Future<BigInteger> future : futures) {
