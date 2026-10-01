@@ -1,4 +1,4 @@
-package hw.task4;
+package hw.task4.subtask1;
 
 import java.util.Objects;
 

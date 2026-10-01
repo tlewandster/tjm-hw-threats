@@ -1,4 +1,4 @@
-package hw.task4;
+package hw.task4.subtask1;
 
 /**
  * Nieoznaczony (unchecked) – nie zmusza do try/catch w każdej lambdzie.
