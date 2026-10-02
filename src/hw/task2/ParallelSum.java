@@ -13,7 +13,7 @@ public class ParallelSum {
                 .sum();
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    static void main() throws InterruptedException {
         // TODO: wypełnij tablicę, podziel na PARTS, uruchom wątki, poczekaj, zsumuj, porównaj
         int[] data = new int[SIZE];
         for (int i = 0; i < SIZE; i++) {

@@ -32,7 +32,7 @@ public class FactorialPool {
         Thread.sleep(sleepDuration);
     }
 
-    public static void main(String[] args) throws Exception {
+    static void main() throws Exception {
         ExecutorService pool = Executors.newFixedThreadPool(POOL_SIZE);
 
         List<Callable<BigInteger>> tasks = new ArrayList<>();

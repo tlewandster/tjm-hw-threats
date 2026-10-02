@@ -9,7 +9,7 @@ public class CounterTask implements Runnable {
         this.number = number;
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    static void main() throws InterruptedException {
         // TODO: utwórz N wątków, uruchom je, poczekaj na wszystkie, wypisz komunikat końcowy
         Thread[] threads = new Thread[5];
         for (int i = 0; i < threads.length; i++) {

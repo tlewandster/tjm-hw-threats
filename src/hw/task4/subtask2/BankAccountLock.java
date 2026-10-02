@@ -38,11 +38,7 @@ public class BankAccountLock {
         return this.balanceGr;
     }
 
-    public Long getId() {
-        return this.id;                          // pole final – synchronizacja niepotrzebna
-    }
-
-    ReentrantLock lock() {
+   ReentrantLock lock() {
         return lock;
     }
 }
